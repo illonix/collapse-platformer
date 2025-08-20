@@ -1,0 +1,53 @@
+<html>
+<head>
+</head>
+<style>
+    body {
+        background-image: url("Images/instructions.png");
+        background-size: 100%;
+        background-position: 50% 50%;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: left;
+        height: 140vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        width: 335px;
+        height: 165px;
+        margin-top: 10px;
+        margin: 10px; /* Adjust margin as needed */
+        transition: width .3s;
+        transition: height .3s;
+    }
+
+    img:hover{
+
+        width: 380px;
+        height: 200px;
+        
+    }
+    
+</style>
+<body>
+    <img src="Images/next button.png" onclick="redirectToLevel1()">
+
+    <script>
+        
+        function Retry() {
+            //retry button
+            window.location.href = 'Level1.html'; // Redirect to game.html
+        }
+
+        function redirectToLevel1() {
+            //menu button
+            window.location.href = 'Level1.html'; // Redirect to credits.html
+        }
+
+    </script>
+</body>
+</html>
