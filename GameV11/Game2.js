@@ -77,12 +77,14 @@ const gameContainer = document.getElementById('game-container');
     let moveRightActive = false;
 
      //jude audio
-  function playMusic(theme) {
-    let audio = new Audio(theme);
-    audio.loop = true;
-    audio.play();
+     function playMusic(theme) {
+      let audio = new Audio(theme);
+      audio.currentTime = 4; // Start 4 seconds into the audio
+      audio.volume = 0.5;
+      audio.loop = true;
+      audio.play();
   }
-  playMusic("theme.mp3",true);
+    playMusic("theme.mp3",true);
 
   function playEnd(end) {
     let audio = new Audio(end);
